@@ -3,17 +3,22 @@
 \usepackage{dashrule}
 \usepackage{graphicx}
 
+%------------------------------------------------
+% customize area
+
 \newcommand\head{
-    Ubuntu 12.04
+    Ubuntu 12.04  % main title of the CD
 }
 
 \newcommand\subhead{
-    64 bit Desktop Edition
+    64 bit Desktop Edition  % subtitle of the CD
 }
 
 \newcommand\indexline{
-    Disc Collection No. 1234
+    Disc Collection No. 1234  % CD collection number
 }
+
+%--------------------------------------------------
 
 \geometry{left=0cm,right=0cm,top=0cm,bottom=0cm}
 
@@ -26,29 +31,27 @@
 
 \savebox\bxa{\hdashrule{\paperheight}{0.4pt}{4pt}}
 
-\vspace*{6cm}
+\vspace*{5cm}
 
 \makebox[\linewidth]{\usebox\bxa}
 
-\vspace*{12cm}
+\vspace*{11cm}
 
 \makebox[\linewidth]{\usebox\bxa}
 
 
-\vspace*{-20.7cm}
-\hspace{4.5cm}
+\vspace*{-18.3cm}\hspace{4.5cm}
 \rotatebox[origin=c]{90}{\usebox\bxa}
 
-\vspace*{-29.7cm}
-\hspace{16.5cm}
+\vspace*{-29.7cm}\hspace{16.5cm}
 \rotatebox[origin=c]{90}{\usebox\bxa}
 
 \clearpage
 
-\vspace*{5cm}
-\center\textit{\indexline}
+\vspace*{2.5cm}
+\center\rotatebox[origin=c]{180}{\Large{\textit{\indexline}}}
 
-\vspace*{11cm}
+\vspace*{14cm}
 \hspace{-6cm}
 \rotatebox[origin=c]{90}{\Huge\head}
 \rotatebox[origin=c]{90}{\Large\subhead}
